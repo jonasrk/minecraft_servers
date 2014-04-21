@@ -1,0 +1,65 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 4/21/14 3:28 PM
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.nextEntry(HashMap.java:793)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:828)
+	at iy.c(SourceFile:198)
+	at iz.b(SourceFile:122)
+	at net.minecraft.server.MinecraftServer.r(SourceFile:454)
+	at hz.r(SourceFile:256)
+	at net.minecraft.server.MinecraftServer.q(SourceFile:397)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:331)
+	at gp.run(SourceFile:573)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.HashMap$HashIterator.nextEntry(HashMap.java:793)
+	at java.util.HashMap$KeyIterator.next(HashMap.java:828)
+	at iy.c(SourceFile:198)
+	at iz.b(SourceFile:122)
+
+-- Affected level --
+Details:
+	Level name: world
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 567 Drop: 117
+	Level seed: 5947259392683690743
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-217,64,80), Chunk: (at 7,4,0 in -14,5; contains blocks -224,0,80 to -209,255,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 356213 game time, 88828 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 5459 (now: true), thunder time: 2897 (now: true)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.r(SourceFile:454)
+	at hz.r(SourceFile:256)
+	at net.minecraft.server.MinecraftServer.q(SourceFile:397)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:331)
+	at gp.run(SourceFile:573)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Mac OS X (x86_64) version 10.9.2
+	Java Version: 1.6.0_65, Apple Inc.
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Apple Inc.
+	Memory: 669024968 bytes (638 MB) / 1069416448 bytes (1019 MB) up to 1069416448 bytes (1019 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	AABB Pool Size: 3303 (184968 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: No suspicious classes found.
+	IntCache: cache: 0, tcache: 0, allocated: 1, tallocated: 63
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 2330 (130480 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 0 / 20; []
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
